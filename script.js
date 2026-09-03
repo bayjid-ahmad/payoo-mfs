@@ -13,6 +13,10 @@ let pinInput3 = document.getElementById("cashOutPinInput")
 // ! function for homepage login button
 function homePageLogin(event){
     event.preventDefault()
+    if(numberInput.value.trim() === "" || pinInput.value.trim() === ""){
+        alert("please enter the information")
+        return
+    }
     let mobileNumber = numberInput.value
     let pin = Number(pinInput.value)
     if(mobileNumber === "01761964262" && pin === 1234){
@@ -45,6 +49,10 @@ function homePageLogin(event){
 }
 //! function for cash in amount 
 function cashInConfirm(){
+    if(cashInAmount.value.trim() === "" || pinInput2.value.trim() === ""){
+        alert("please enter the information")
+        return
+    }
     let amount = parseFloat(mainAmount.innerText)
     let pinNumber1 = parseInt(pinInput2.value)
     let cashInAmountNumber = Number(cashInAmount.value);
@@ -67,6 +75,10 @@ function cashInConfirm(){
 
 if (cashOut) {
     cashOut.addEventListener("click" , function(){
+            if(cashOutAmount.value.trim() === "" || pinInput3.value.trim() === ""){
+                alert("please enter the information")
+                return
+            }
       let amount = parseFloat(mainAmount.innerText)
     let pinNumber1 = parseInt(pinInput3.value)
     let cashOutAmountNumber = Number(cashOutAmount.value);
