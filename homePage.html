@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="flex justify-center">
+        <div class="mockup-phone border-[#ff8938]">
+  <div class="mockup-phone-camera"></div>
+  <div class="mockup-phone-display bg-[#D9D9D9]">
+    <div class="flex justify-center items-center h-1/4  ">
+        <div class="stats shadow bg-white">
+  <div class="stat">
+    <div class="stat-title">Total Amount</div>
+    <div class="stat-value"><h1 id="amount">89400</h1></div>
+   <!-- cash in out section -->
+</div>
+</div>
+</div>
+<div class="divider"></div>
+<div class="flex justify-center gap-5">
+    <button onclick="buttonCashIn()" id="cashinButton" class="btn bg-green-400">Cash in
+        <img src="./assets/opt-1.png" alt="">
+    </button>
+    <button onclick="buttonCashOut()" id="cashoutButton" class="btn">Cash out
+        <img src="./assets/opt-2.png" alt="">
+    </button>
+</div>
+<fieldset id="cashinContainer" class="fieldset bg-white m-5 p-5">
+      <label  class="label text-black font-bold">Cash in Amount</label>
+      <input id="cashInAmountInput" type="text" class="input rounded-2xl" placeholder="Enter Your amount" />
+      <label class="label text-black font-bold">4 digit Pin</label>
+      <input id="cashInPinInput" required type="password" class="input" placeholder="Enter 4 digit Pin" />
+      <button  class="btn btn-neutral mt-4" id="cashinButtonConfirm" type="button" onclick="cashInConfirm()">Cash In</button>
+    </fieldset>
+<fieldset id="cashoutContainer" class="hidden  fieldset bg-white m-5 p-5">
+      <label class="label text-black font-bold">Cash Out Amount</label>
+      <input id="cashOutAmountInput" type="email" class="input rounded-2xl" placeholder="Enter Your amount" />
+      <label class="label text-black font-bold">4 digit Pin</label>
+      <input id="cashOutPinInput" type="password" class="input" placeholder="Enter 4 digit Pin" />
+      <button id="cashoutButtonConfirm" class="btn btn-neutral mt-4" type="button" >Cash Out</button>
+    </fieldset>
+</div>
+</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

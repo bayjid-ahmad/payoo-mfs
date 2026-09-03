@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- daisy UI and tailwind css CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body>
+      <div class="flex justify-center items-center">
+          <div class="mockup-phone border-[#ff8938] bg-black">
+  <div class="mockup-phone-camera "></div>
+  <div class="mockup-phone-display bg-[#D9D9D9] mt-1">
+    <div>
+        <img class="mt-52 mx-auto" src="./assets/Logo-full.png" alt="">
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 mx-auto my-5 shadow-2xl">
+      <div class="card-body">
+        <form onsubmit="homePageLogin(event)">
+        <fieldset class="fieldset">
+          <label class="label text-black font-bold">Mobile Number</label>
+          <input id="loginPageNumberInput" type="text" class="input rounded-2xl" placeholder="Enter Your Number" />
+          <label class="label text-black font-bold">4 digit Pin</label>
+          <input type="password" id="loginPagePinInput" class="input" placeholder="Enter 4 digit Pin" />
+          <button id="loginPageLoginButton" class="btn btn-neutral mt-4" type="submit">Login</button>
+        </fieldset>
+        </form>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
